@@ -4,16 +4,16 @@
 int main()
 {
     char palabra[10];
+    int num = 10;
 
     scanf("%9s",palabra);
 
-    printf("%s\n", palabra);
-
-    int num = 5;
-
+    for (int i = 0; i < 10; i++)
+    {
+        printf("%d : %s\n", i, palabra);
+    }
+    
     printf("The number %d is %s\n", num, evenOddFunc(num));
-
-    tester(num);
 
     return 0;
 }
